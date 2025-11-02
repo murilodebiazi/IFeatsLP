@@ -20,11 +20,12 @@ create table cad_Item_Pedido
 create table cad_Pedidos
 (
 	id INT PRIMARY KEY UNIQUE NOT NULL AUTO_INCREMENT,
-    horario_inicial DATETIME,
-    horario_final DATETIME,
-    id_pedido INT,
+    numero INT NOT NULL,
+    horario_inicial TIME,
+    horario_final TIME,
+    id_item INT,
     id_cliente INT,
-	FOREIGN KEY(id_pedido) REFERENCES cad_Item_Pedido (id),
+	FOREIGN KEY(id_item) REFERENCES cad_Item_Pedido (id),
     FOREIGN KEY(id_cliente) REFERENCES cad_Clientes (id)
 );
 
