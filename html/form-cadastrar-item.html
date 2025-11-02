@@ -2,24 +2,35 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Cadastrar Item</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/estiloTelasCadastros.css">
+  <link rel="icon" href="../img/Icon.png" type="image/png">
+  <title>Cadastrar Item</title>
 </head>
 
 <body>
-    <h2>Cadastro de Itens</h2>
-    <div class="corpo">
-    <form class="form" action=".../php/exec-cadastrar-item.php" method="POST">
+  <div class="cabecalho">
+    <a href="../html/menuCadastro.html">
+      <img id="logo" src="../img/Logo.png" alt="Logo">
+    </a>
+  </div>
+
+  <div class="corpo">
+    <h2 id="titulo">Cadastro de Itens</h2>
+    <form class="form" action="../php/exec-cadastrar-item.php" method="POST">
       <label>Nome:</label>
-      <input type="text" name="nome" size="10" required> 
+      <input type="text" name="nome" size="10" required>
 
       <label>Descrição:</label>
-      <input type="text" name="cnpj" required>
+      <input type="text" name="desc" required>
 
       <input class="botao" type="submit" value="Cadastrar">
-      
+
     </form>
+  </div>
+
+  <div class="rodape">
+    <p class="copyright">IFood @ 2025 - Murilo, Kesler, Maico, Richard</p>
   </div>
 </body>
 

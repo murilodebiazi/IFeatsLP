@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/estiloTelasCadastros.css">
+    <link rel="icon" href="../img/Icon.png" type="image/png">
+    <title>Cadastrar Pedido</title>
+</head>
+
+<body>
+    <div class="cabecalho">
+        <a href="../html/menuCadastro.html">
+            <img id="logo" src="../img/Logo.png" alt="Logo">
+        </a>
+    </div>
+
+    <div class="corpo">
+        <h2 id="titulo">Cadastro de Pedidos</h2>
+        <form class="form" action="../php/exec-cadastrar-pedido.php" method="POST">
+            <label>Numero:</label>
+            <input type="number" name="numero" required>
+
+            <label>Cliente (id):</label>
+            <input type="number" name="cliente" required>
+
+            <label>Item (id):</label>
+            <input type="number" name="item" required>
+
+            <label>Horario Inicial:</label>
+            <input type="time" name="hora_inicial" required>
+
+            <label>Horario Final:</label>
+            <input type="time" name="hora_final" required>
+
+            <input class="botao" type="submit" value="Cadastrar">
+
+        </form>
+    </div>
+
+    <div class="rodape">
+        <p class="copyright">IFood @ 2025 - Murilo, Kesler, Maico, Richard</p>
+    </div>
+</body>
+
+</html>
