@@ -1,8 +1,8 @@
 <?php
 $servidor = "localhost";
 $usuario = "root";
-$senha = "";
-$banco = "fastfood";
+$senha = "root";
+$banco = "FastFood";
 
 $conexao = mysqli_connect($servidor, $usuario, $senha, $banco);
 

@@ -11,11 +11,10 @@ if ($resultado->num_rows > 0) {
     session_start();
     $linha = $resultado->fetch_assoc();
     $_SESSION['email'] = $linha['email'];
-    header("Location: ../html/sessao-cliente.html");
+    header("Location: ../php/tela-cliente.php");
     exit();
-} else {
-    echo "Cliente não encontrado!<br>";
-    echo "<a href='../html/menu-principal.html'>Voltar ao menu principal</a>";
-}
-mysqli_close($conexao);
+} //else {
+    //echo "Cliente não encontrado!<br>";
+    //echo "<a href='../html/menu-principal.html'>Voltar ao menu principal</a>";
+//}
 ?>
