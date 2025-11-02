@@ -18,14 +18,14 @@ if ($resultadoCliente->num_rows > 0 && $resultadoItem->num_rows > 0) {
     if (mysqli_query($conexao, $sql)) {
         echo "Pedido cadastrado com sucesso!<br>";
         echo "<a href='../html/form-cadastrar-pedido.html'>Cadastrar outro pedido</a><br>";
-        echo "<a href='../html/menuCadastro.html'>Voltar ao menu principal</a>";
+        echo "<a href='../html/menu-principal.html'>Voltar ao menu principal</a>";
     } else {
         echo "Erro: " . mysqli_error($conexao);
     }
 } else {
     echo "Não tem cliente ou item com os IDs inseridos!<br>";
     echo "<a href='../html/form-cadastrar-pedido.html'>Voltar ao menu Cadastrar Pedidos</a><br>";
-    echo "<a href='../html/menuCadastro.html'>Voltar ao menu principal</a>";
+    echo "<a href='../html/menu-principal.html'>Voltar ao menu principal</a>";
 }
 mysqli_close($conexao);
 ?>

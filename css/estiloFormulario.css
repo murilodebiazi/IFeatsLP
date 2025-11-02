@@ -28,6 +28,19 @@ body {
     text-shadow: 3px 3px 3px black;
 }
 
+#titulo {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: center;
+    border-color: #1d3ae2;
+    border-style: outset;
+    text-decoration: none;
+    color: white;
+    background: #051885;
+    text-shadow: 3px 3px 3px black;
+}
+
 /* Formulário */
 
 .form {
@@ -35,8 +48,8 @@ body {
     flex-direction: column;
     border: 2px solid black;
     border-radius: 6px;
-    justify-content: space-between;
     padding: 20pt 35pt;
+    background-color: rgb(177, 0, 177);
 }
 
 .form label,
@@ -47,6 +60,23 @@ input {
 
 .form input {
     margin-bottom: 8pt;
+}
+
+#voltar {
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: rgba(64, 0, 116, 0.753);
+    padding: 5pt;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: black;
+    font-size: 15pt;
+}
+
+#voltar:hover {
+    opacity: 0.7;
 }
 
 .form .botao {
@@ -75,43 +105,15 @@ input {
     border-bottom: black 3px solid;
 }
 
-#titulo {
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
-    text-align: center;
-    border-color: #1d3ae2;
-    border-style: outset;
-    text-decoration: none;
-    color: white;
-    background: #051885;
-    text-shadow: 3px 3px 3px black;
-}
-
-#voltar {
-    text-decoration: none;
-    margin-left: 40pt;
-    display: block;
-    background-color: rgba(202, 231, 202, 0.503);
-    padding: 5pt;
-    border: 2px rgb(167, 236, 167) solid;
-    border-radius: 5px;
-    color: black;
-    font-size: 15pt;
-}
-
-#voltar:hover {
-    opacity: 0.5;
-}
-
 #logo {
     margin: 0 auto;
+    padding: 10px;
+}
+
+#logo img{
     height: 100px;
 }
 
-#logo img {
-    width: 400px;
-}
 
 .rodape {
     position: absolute;
@@ -139,7 +141,7 @@ input {
     border: 2px solid black;
     border-radius: 6px;
     padding: 20pt 35pt;
-    background-color: rgb(177, 0, 177);
+    background-color: purple;
 }
 
 .menu .botao-menu {

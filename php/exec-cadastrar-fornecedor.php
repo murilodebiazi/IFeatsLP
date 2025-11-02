@@ -9,7 +9,7 @@ $sql = "INSERT INTO cad_Fornecedores (nome, cnpj, telefone) VALUES ('$nome','$cn
 if (mysqli_query($conexao, $sql)) {
     echo "Fornecedor cadastrado com sucesso!<br>";
     echo "<a href='../html/form-cadastrar-fornecedor.html'>Cadastrar outro fornecedor</a><br>";
-    echo "<a href='../html/menuCadastro.html'>Voltar ao menu principal</a>";
+    echo "<a href='../html/menu-principal.html'>Voltar ao menu principal</a>";
 } else {
     echo "Erro: " . mysqli_error($conexao);
 }
