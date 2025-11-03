@@ -1,3 +1,3 @@
 <?php
-header('location: html/MenuCadastro.html');
+header('location: html/menu-principal.html');
 ?>
